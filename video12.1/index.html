@@ -1,0 +1,63 @@
+<!-- You are given 12 files; 6 audio and 6 video.
+    Design a website using HTML only which shows these 12 files.
+    1.mp3, 2.mp3 .... 6.mp3
+    1.mp4, 2.mp4 .... 6.mp4 -->
+    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #970a0a;
+        }
+        h1 {
+            text-align: center;
+        }
+        .media-section {
+            margin-bottom: 40px;
+        }
+        .media-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        audio, video {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Media Gallery</h1>
+
+    <div class="media-section">
+        <h2>Audio Files</h2>
+        <div class="media-container">
+            <audio controls src="1.mp3"></audio>
+            <audio controls src="2.mp3"></audio>
+            <audio controls src="3.mp3"></audio>
+            <audio controls src="4.mp3"></audio>
+            <audio controls src="5.mp3"></audio>
+            <audio controls src="6.mp3"></audio>
+        </div>
+    </div>
+
+    <div class="media-section">
+        <h2>Video Files</h2>
+        <div class="media-container">
+            <video controls src="video.mp4"></video>
+            <video controls src="video.mp4"></video>
+            <video controls src="3.mp4"></video>
+            <video controls src="4.mp4"></video>
+            <video controls src="5.mp4"></video>
+            <video controls src="6.mp4"></video>
+        </div>
+    </div>
+
+</body>
+</html>
